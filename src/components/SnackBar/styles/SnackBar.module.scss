@@ -1,0 +1,23 @@
+.snackBarContainer {
+    position: fixed;
+    bottom: 10px;
+    opacity: 1;
+    left: 0;
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+
+    .snackBarContent {
+        max-width: 500px;
+        margin: 20px;
+        background-color: indianred;
+        padding: 15px;
+    }
+}
+
+.snackBarContainerClosed {
+    bottom: -150px;
+    opacity: 0;
+}

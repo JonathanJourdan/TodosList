@@ -1,0 +1,22 @@
+.todoViewContainer {
+  .BackButton {
+    font-size: 25px;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px 20px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    color: var(--text-secondarycolor, white);
+    background-color: var(--primarycolor, --text-primarycolor, black);
+    border-color: var(--primarycolor, --text-primarycolor, black);
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  hr {
+    margin: 20px 0;
+  }
+}

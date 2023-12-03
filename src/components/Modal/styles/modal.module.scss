@@ -1,0 +1,36 @@
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modalOverlay {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    z-index: 1;
+  }
+
+  .modal {
+    background-color: white;
+    min-width: 260px;
+    width: 90%;
+    max-height: 90%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 2;
+
+    .modalTitle {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  }
+}

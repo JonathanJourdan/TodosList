@@ -1,0 +1,77 @@
+.todoListContainer {
+  h1 {
+    padding: 10px 0;
+  }
+
+  .addTodoButton {
+    font-size: 25px;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    color: var(--text-secondarycolor, white);
+    background-color: var(--primarycolor, --text-primarycolor, black);
+    border-color: var(--primarycolor, --text-primarycolor, black);
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .addTodoForm {
+    .field {
+      margin-top: 20px;
+
+      input,
+      textarea {
+        font-size: 16px;
+        line-height: 28px;
+        padding: 8px 16px;
+        width: 100%;
+        min-height: 44px;
+        border: unset;
+        border-radius: 4px;
+        outline-color: rgb(84 105 212 / 0.5);
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+          rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+          rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+      }
+
+      input[type="submit"] {
+        background-color: rgb(84, 105, 212);
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgb(84, 105, 212) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+
+      input[type="submit"],
+      input[type="button"] {
+        transition: transform 0.1s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+
+      label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+}
